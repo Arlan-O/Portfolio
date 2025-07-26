@@ -6,13 +6,24 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+    <!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Marquee Plugin -->
+<script src="https://assets.codepen.io/16327/gsap-marquee.min.js"></script>
+
 
     <title>Portfolio</title>
 </head>
 <body>
-    <a href="https://wa.me/5551994820901" class="wpp" target="_blank" aria-label="Fale no WhatsApp">
-        <img src="imagem/wpp.svg" alt="WhatsApp" />
-    </a>
+    <div class="limit-wpp">
+        <a href="https://wa.me/5551994820901" class="wpp" target="_blank" aria-label="Fale no WhatsApp">
+            <img src="imagem/wpp.svg" alt="WhatsApp" />
+        </a>
+    </div>
+
     <header>
         <div  class="div-section">
             
@@ -50,19 +61,35 @@
                     
                     </div>
                     <div class="img-sobre">
-                        <img src="imagem/eu.png" alt="">
+                        <img src="imagem/dbz.png" alt="">
                     </div>
                 </div>
                 
             </div>
         </section>
-        <article class="Skilss">
-            <img src="imagem/html-icon.svg" alt="icone html">
-            <img src="imagem/css-icon.svg" alt="icone css">
-            <img src="imagem/JS-icon.svg" alt="icone JS">
-            <img src="imagem/figma-icon.svg" alt="icone figma">
-            <a href=""><img src="imagem/github-icon.svg" alt="icone github"></a>
-        </article>
+      <div class="scroll">
+            <div class="scroll_container">
+                <article class="Skilss">
+                    <img class="skill" src="imagem/html-icon.svg" alt="icone html">
+                    <img class="skill" src="imagem/css-icon.svg" alt="icone css">
+                    <img class="skill" src="imagem/JS-icon.svg" alt="icone JS">
+                    <img class="skill" src="imagem/figma-icon.svg" alt="icone figma">
+                    <a href="https://github.com/Arlan-O">
+                    <img class="skill git" src="imagem/github-icon.svg" alt="icone github">
+                    </a>
+
+                    <img class="skill" src="imagem/html-icon.svg" alt="icone html">
+                    <img class="skill" src="imagem/css-icon.svg" alt="icone css">
+                    <img class="skill" src="imagem/JS-icon.svg" alt="icone JS">
+                    <img class="skill" src="imagem/figma-icon.svg" alt="icone figma">
+                    <a href="https://github.com/Arlan-O">
+                    <img class="skill git" src="imagem/github-icon.svg" alt="icone github">
+                    </a>
+
+                </article>
+            </div>
+        </div>
+
         <article id="projetos1" class="projetos">
             <div class="limit-title">
                 <h2>Meus projetos</h2>
