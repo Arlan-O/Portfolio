@@ -4,27 +4,30 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .div-section{
     display: flex;
-    background:url(../imagem/eu2.png) no-repeat ;
+    background:url(../imagem/eu-noBACK.png) no-repeat ;
     background-position: center center;
     background-size: contain;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     max-width: 1200px;
     margin: auto;
 }
 .img{
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: start;
     
 }
 .img h1{
-    font-size: 90pt;
+    font-size: 70pt;
     font-family: monospace;
     letter-spacing: 40px;
-    margin-top: 50px;
     color:#152121 ;
     position: relative;
     z-index: 1000;
@@ -39,6 +42,7 @@
     align-items: end;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
     
 }
 .s1{
@@ -97,6 +101,13 @@ nav ul li a{
     transition: text-decoration 2s;
     
 }
+
+nav ul li a:hover{
+    background-color: #263e41;
+    transition: 0.5s;
+
+}
+
 /* a:hover{
     text-decoration: underline;
     color: #ffffff;
@@ -116,6 +127,11 @@ nav ul li a{
 .Skilss img {
     width: 150px;
     height: 150px;
+}
+
+.git{
+    background-color: #FFF;
+    border-radius: 50%;
 }
 
 main{
@@ -190,6 +206,10 @@ main{
     font-size: 30pt ;
 }
 
+.paragrafo-sobre h2{
+    font-size: 45pt;
+}
+
 .projetos{
     display: flex;
     justify-content: space-around;
@@ -205,7 +225,7 @@ main{
 .projetos h2{
     font-size: 35pt;
     font-family: Arial, Helvetica, sans-serif;
-    
+    text-shadow: 1px 1px 5px rgb(0, 0, 1);
     
 }
 .limit{
@@ -220,12 +240,16 @@ main{
 
 .project{
     display: flex;
-    justify-content: center;
-    align-items: end;
-    border-radius: 10px;
-    background-color: #FFF;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fff;
     width: 250px;
     height: 300px;
+    flex-direction: column;
+    color: #112525;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .limit-title{
@@ -242,12 +266,45 @@ main{
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
     width: 90%;
     height: 46px;
     margin-bottom: 10px;
+    box-shadow: 0 0 5px 2px black;
 }
+
+.project button:hover{
+    background-color: #263e41;
+    transition: 0.5s;
+    font-size: 18pt;
+    color: #FFF;
+}
+
+.project h3{
+    padding-top: 5;
+}
+
+button:disabled{
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.project img{
+    width: 220px;
+    height: 200px;
+    border-radius: 5px ;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    object-fit: cover;
+}
+
+.project img:hover{
+    filter: grayscale(0%);
+    background-image: url(../imagem/image.png);
+}
+
 footer{
     background-color: #263e41;
     height: auto;
@@ -288,6 +345,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
+    border-top:2px solid #FFF;
 
 }
 .wpp{
@@ -298,9 +356,70 @@ footer{
 }
 
 .wpp img{
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
 }
+
+.scroll{
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    mask: linear-gradient(to right, transparent, #000000 50%, rgb(0, 0, 0), 85%, transparent);
+}
+
+.scroll_container{
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 20s linear infinite;
+}
+
+.skill {
+  flex-shrink: 0;
+  margin: 0 2em;
+  width: 50px;
+  height: auto;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+    height: 150px;
+    background-color: #263e41;
+    gap: 50px;
+    
+}
+
+#rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+    gap: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+
+}
+
+#rede img{
+    width: 45px;
+    height: auto;
+}
+
+
+@keyframes scrollLeft{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
 
 
 
