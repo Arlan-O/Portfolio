@@ -10,7 +10,11 @@ html{
 
 .div-section{
     display: flex;
+<<<<<<< HEAD
     background:url(../imagem/eu-noBACK.png) no-repeat ;
+=======
+    background:url(../imagem/eu-noBackground.png) no-repeat ;
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
     background-position: center center;
     background-size: contain;
     width: 100%;
@@ -277,6 +281,7 @@ main{
 .project button:hover{
     background-color: #263e41;
     transition: 0.5s;
+<<<<<<< HEAD
     font-size: 18pt;
     color: #FFF;
 }
@@ -303,6 +308,8 @@ button:disabled{
 .project img:hover{
     filter: grayscale(0%);
     background-image: url(../imagem/image.png);
+=======
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
 }
 
 footer{
@@ -356,8 +363,13 @@ footer{
 }
 
 .wpp img{
+<<<<<<< HEAD
     width: 55px;
     height: 55px;
+=======
+    width: 75px;
+    height: 75px;
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
 }
 
 .scroll{
@@ -365,7 +377,11 @@ footer{
     overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
+<<<<<<< HEAD
     mask: linear-gradient(to right, transparent, #000000 50%, rgb(0, 0, 0), 85%, transparent);
+=======
+    mask: linear-gradient(to right, transparent, #ce0b0b 50%, red, 85%, transparent);
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
 }
 
 .scroll_container{
@@ -381,6 +397,7 @@ footer{
   height: auto;
 }
 
+<<<<<<< HEAD
 .contact{
     display: flex;
     justify-content: center;
@@ -411,6 +428,8 @@ footer{
 }
 
 
+=======
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
 @keyframes scrollLeft{
     0%{
         transform: translateX(0);
