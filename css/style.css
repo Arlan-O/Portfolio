@@ -100,6 +100,13 @@ nav ul li a{
     transition: text-decoration 2s;
     
 }
+
+nav ul li a:hover{
+    background-color: #263e41;
+    transition: 0.5s;
+
+}
+
 /* a:hover{
     text-decoration: underline;
     color: #ffffff;
@@ -198,6 +205,10 @@ main{
     font-size: 30pt ;
 }
 
+.paragrafo-sobre h2{
+    font-size: 45pt;
+}
+
 .projetos{
     display: flex;
     justify-content: space-around;
@@ -255,7 +266,14 @@ main{
     width: 90%;
     height: 46px;
     margin-bottom: 10px;
+    box-shadow: 0 0 5px 2px black;
 }
+
+.project button:hover{
+    background-color: #263e41;
+    transition: 0.5s;
+}
+
 footer{
     background-color: #263e41;
     height: auto;

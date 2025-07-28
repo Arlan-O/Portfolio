@@ -49,7 +49,7 @@ const tl = gsap.timeline({
   }
 });
 
-tl.from('.img .nome', { x: -500, opacity: 0, duration: 1, ease: 'power3.out' })
+tl.from('.img .nome', { x: -500,rotate:90 , opacity: 0, duration: 1, ease: 'power3.out' })
   .from('.s2', { y: 50, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.5)' }, "+=0.3")
   .from('.s1', { x: 100, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.7)' }, "+=0.2");
 
