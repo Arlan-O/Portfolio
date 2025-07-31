@@ -518,7 +518,6 @@ footer{
     .paragrafo-sobre {
         align-items: start;
     }
-    
     .Skilss img{
         width: 100px;
         height: 100px;
@@ -527,42 +526,34 @@ footer{
         height: auto;
         padding-top:25px;
     }
-
     .projetos h2{
         font-size: 30pt;
         margin-bottom: 20px;
         margin-left: 20px;
         text-shadow: none;
     }
-
     .project{
         width: 150px;
         height: 200px;
         justify-content: space-around;
     }
-
     .projetos img{
         width: 120px;
         height: 100px;
     }
-
     .project button{
         height: 25px;
         font-size: 14pt;
         box-shadow: 0 0 6px 0.5px black;
-
     }
     .project h3{
         font-size: 10pt;
     } 
-
     body, html{
         overflow-x: hidden;
         width: 100%;
-    }
-    
+    }   
 }
-
 @media(max-width: 1200px) {
     .title-sobre{
         padding-left: 15px;
@@ -572,21 +563,11 @@ footer{
         height: 25px;
         font-size: 14pt;
         box-shadow: 0 0 6px 0.5px black;
-
     }
     .limit-title{
         padding-left: 15px;
-    }
-    
+    }   
 }
-
-
-
-
-
-
-
-
 
 /* @keyframes pulse {
   0%, 100% {
