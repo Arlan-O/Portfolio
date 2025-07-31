@@ -1,15 +1,30 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 gsap.registerPlugin(ScrollTrigger);
 
 
 gsap.from(".container-sobre", {
     opacity:0,
-    y:50,
+    y:20,
     scrollTrigger:{
         trigger:".paragrafo-sobre",
-        scrub:1,
-        start:"top center",
+        scrub:2,
+        start:"top 80%",
         end:"top center",
+        // markers:true
+    }
+})
+
+
+
+gsap.from(".limit", {
+    opacity:0,
+    y:20,
+    scrollTrigger:{
+        trigger:".project",
+        scrub:2,
+        start:"top 80%",
+        end:"top 70%",
+        // markers:true
     }
 })
 
@@ -35,16 +50,17 @@ document.querySelectorAll("button").forEach((botao) =>{
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: '.nome',
-    start: 'top 50%', // pode ajustar
+    start: 'top 50%',
   }
 });
 
 tl.from('.img .nome', { x: -500,rotate:90 , opacity: 0, duration: 1, ease: 'power3.out' })
-  .from('.s2', { y: 50, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.5)' }, "+=0.3")
+.from('.s3', {x:50, opacity:0,duration:1, ease:'elastic.out(0.7, 0.5)'}, "+=0.2")  
+.from('.s2', { y: 50, opacity: 0, duration: 1, ease: 'elastic.out(0.8, 0.5)' }, "+=0.1")  
   .from('.s1', { x: 100, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.7)' }, "+=0.2");
+  
 
-
-=======
+// =======
 // gsap.from('.img .nome', {
 // 	scrollTrigger: '.nome', 
 // 	x: -500,
@@ -74,32 +90,32 @@ tl.from('.img .nome', { x: -500,rotate:90 , opacity: 0, duration: 1, ease: 'powe
     
 // })
 
-let elementScrol = document.querySelector('.scroll_container')
+// let elementScrol = document.querySelector('.scroll_container')
 
-let elementContainer = elementScrol.querySelector('.Skilss')
+// let elementContainer = elementScrol.querySelector('.Skilss')
 
-let elementFilho = Array.from(elementContainer.children);
+// let elementFilho = Array.from(elementContainer.children);
 
-elementFilho.forEach(item => {
-    let elementDouble = item.cloneNode(true);
-    elementContainer.appendChild(elementDouble);
-    console.log(item);
+// elementFilho.forEach(item => {
+//     let elementDouble = item.cloneNode(true);
+//     elementContainer.appendChild(elementDouble);
+//     console.log(item);
 
-})
-
-
-
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.nome',
-    start: 'top 50%', // pode ajustar
-  }
-});
-
-tl.from('.img .nome', { x: -500,rotate:90 , opacity: 0, duration: 1, ease: 'power3.out' })
-  .from('.s2', { y: 50, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.5)' }, "+=0.3")
-  .from('.s1', { x: 100, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.7)' }, "+=0.2");
+// })
 
 
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.nome',
+//     start: 'top 50%', // pode ajustar
+//   }
+// });
+
+// tl.from('.img .nome', { x: -500,rotate:90 , opacity: 0, duration: 1, ease: 'power3.out' })
+//   .from('.s2', { y: 50, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.5)' }, "+=0.3")
+//   .from('.s1', { x: 100, opacity: 0, duration: 1.1, ease: 'elastic.out(0.8, 0.7)' }, "+=0.2");
+
+
+// >>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
   

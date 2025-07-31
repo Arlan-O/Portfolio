@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 html{
@@ -10,11 +11,11 @@ html{
 
 .div-section{
     display: flex;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     background:url(../imagem/eu-noBACK.png) no-repeat ;
-=======
+/* ======= */
     background:url(../imagem/eu-noBackground.png) no-repeat ;
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+/* >>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60 */
     background-position: center center;
     background-size: contain;
     width: 100%;
@@ -53,32 +54,27 @@ html{
     font-size: 100pt;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #2F4D50;
-    
-}
-
-span.s1{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-left: 70px;
-
+    
 }
-
 
 .s2{
     font-size: 50pt;
     font-family: monospace;
     color: #152121;
     overflow: hidden;
+
 }
 
-span.s2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding-left:250px ;
+.s3{
+    font-size: 50pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #152121;
+
 }
 
 nav{
@@ -173,7 +169,6 @@ main{
 .container-sobre{
     background-color: #152121;
     width: 100%;
-    height: 500px;
     color: #ffffff;
     padding: 20px;
     margin-bottom: 25px;
@@ -194,7 +189,7 @@ main{
     width: 250px;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 50px 2px #263e41;
+    box-shadow: 0 0 50px 2px #6d8588;
 }
 .container-sobre p{
     font-size: 16pt;
@@ -229,7 +224,7 @@ main{
 .projetos h2{
     font-size: 35pt;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1px 5px rgb(0, 0, 1);
+    
     
 }
 .limit{
@@ -248,7 +243,7 @@ main{
     gap: 10px;
     align-items: center;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #FFF;
     width: 250px;
     height: 300px;
     flex-direction: column;
@@ -281,8 +276,8 @@ main{
 .project button:hover{
     background-color: #263e41;
     transition: 0.5s;
-<<<<<<< HEAD
-    font-size: 18pt;
+/* <<<<<<< HEAD */
+    font-size: 16pt;
     color: #FFF;
 }
 
@@ -308,8 +303,8 @@ button:disabled{
 .project img:hover{
     filter: grayscale(0%);
     background-image: url(../imagem/image.png);
-=======
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+/* ======= */
+/* >>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60 */
 }
 
 footer{
@@ -352,24 +347,20 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border-top:2px solid #FFF;
+    border-top:1px solid #FFF;
 
 }
 .wpp{
     position: fixed;
-    top:50px;
+    top:20px;
     left: 20px;
     z-index: 1000;
 }
 
 .wpp img{
-<<<<<<< HEAD
-    width: 55px;
-    height: 55px;
-=======
-    width: 75px;
-    height: 75px;
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+    width: 50px;
+    height: 50px;
+
 }
 
 .scroll{
@@ -377,11 +368,11 @@ footer{
     overflow: hidden;
     max-width: 1200px;
     margin: 0 auto;
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
     mask: linear-gradient(to right, transparent, #000000 50%, rgb(0, 0, 0), 85%, transparent);
-=======
+/* ======= */
     mask: linear-gradient(to right, transparent, #ce0b0b 50%, red, 85%, transparent);
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+/* >>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60 */
 }
 
 .scroll_container{
@@ -397,7 +388,7 @@ footer{
   height: auto;
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 .contact{
     display: flex;
     justify-content: center;
@@ -426,10 +417,13 @@ footer{
     width: 45px;
     height: auto;
 }
+/* #icon{
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+} */
 
 
-=======
->>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60
+/* =======
+>>>>>>> ef411d05e7dc8e2f948a18a40cff588279d91d60 */
 @keyframes scrollLeft{
     0%{
         transform: translateX(0);
@@ -439,6 +433,166 @@ footer{
     }
 }
 
+@media  (min-width: 481px) and (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .div-section{
+        display: flex;
+        background: url(../imagem/eu-noBACK.png)no-repeat;
+        background-position: center top;
+        width: 100%;
+        height: 50vh;
+        
+        
+    }
+    .img{
+        display: flex;
+        justify-content: start;
+        align-items: top;
+    }
+    .img h1{
+        font-size: 60px;
+        letter-spacing: 25px;
+    }
+
+    .sub{
+        justify-content: start;
+        
+    }
+
+    .s1{
+        font-size: 65pt;
+        padding-left: 0;
+    }
+
+    .s2{
+        font-size: 40pt;
+        padding-left: 50px;
+    }
 
 
 
+    nav{
+        height: 30px;
+    }
+    .mobile-hide{
+        display: none;
+    }
+
+    nav ul li a{
+        font-size: 14pt;
+        padding: 3px;
+        border-radius: 5px;
+    }
+
+    main{
+        padding-top: 25px;
+    }
+
+    .sobre{
+        padding-bottom: 30px;
+    }
+
+    .title-sobre{
+        width: 90%;
+    }
+
+    .title-sobre h2{
+        font-size: 20pt;
+    }
+    .container-sobre{
+        padding: 15px;
+        border: 10px;
+    }
+    .container-sobre p{
+        width: 100%;
+        line-height: 30px;
+        text-align: justify;
+        font-size: 13pt;
+
+    }
+
+    .paragrafo-sobre {
+        align-items: start;
+    }
+    
+    .Skilss img{
+        width: 100px;
+        height: 100px;
+    }
+    .projetos{
+        height: auto;
+        padding-top:25px;
+    }
+
+    .projetos h2{
+        font-size: 30pt;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        text-shadow: none;
+    }
+
+    .project{
+        width: 150px;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+    .projetos img{
+        width: 120px;
+        height: 100px;
+    }
+
+    .project button{
+        height: 25px;
+        font-size: 14pt;
+        box-shadow: 0 0 6px 0.5px black;
+
+    }
+    .project h3{
+        font-size: 10pt;
+    } 
+
+    body, html{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 1200px) {
+    .title-sobre{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project button{
+        height: 25px;
+        font-size: 14pt;
+        box-shadow: 0 0 6px 0.5px black;
+
+    }
+    .limit-title{
+        padding-left: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* @keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+} */
